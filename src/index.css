@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @layer base {
+    label {
+        @apply flex flex-col
+    }
+    input,
+    select {
+        @apply bg-transparent border outline-none p-2 rounded
+    }
+} */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+/* body{
+    background-color: rgb(29, 29, 71);
+}
+.modal-backdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0,0.8);
+}
+.modal{
+    padding: 30px;
+    max-width: 400px;
+    margin: 100px auto;
+    background: rgb(42, 88, 109);
+    border-radius: 10px;
+    border: 1px solid red;
+}
+.new-event-form label,
+.new-event-form input{
+  display: block;
+  text-align: left;
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+}
+
+.btn{
+    border: 2px solid red;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    font-size: 1.6rem;
+    /* height: 100%; */
+    font-weight: 500;
+    
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+/* 
+#root {
+    height: 100%;
+} */
+
+@media (max-width: 375px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+.navbar {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px dashed #B0DAFF;
+    /* margin-bottom: 5rem; */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255,0.9);
+    z-index: 10000;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    margin: 0;
+    color: #19376D;
+    cursor:pointer;
+    user-select: none;
+}
+
+.navbar-counter {
+    margin: 0;
+}
+
+@media (max-width: 375px) {
+    .navbar-logo {
+        font-size: 2.5rem;
+    }
+}
+.App {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+    margin-bottom: 5rem;
+    margin-top: 10rem;
+}
+
+.create-user {
+    position: fixed;
+    transform: rotate(-90deg);
+    top: 50%;
+    border: 0;
+    background-color: #F45050;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    left: -43px;
+}
+
+.no-users {
+    font-size: 10rem;
+    font-weight: bold;
+    opacity: 20%;
+    color: #ccc;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select:none;
+}
+
+@media (max-width: 500px) {
+    .no-users {
+        font-size: 2.8rem;
+    }
+}
